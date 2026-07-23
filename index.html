@@ -3,29 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trilhas de Cursos — Inteligência Mil Grau</title>
-  <meta name="description" content="Trilhas de cursos gratuitos do canal Inteligência Mil Grau no YouTube." />
+  <meta name="theme-color" content="#07140f" />
+  <title>Trilhas de IA — Inteligência Mil Grau</title>
+  <meta name="description" content="Trilhas para aprender inteligência artificial na prática, do básico ao avançado." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="page-texture" aria-hidden="true"></div>
+
   <header class="site-header">
-    <div class="container">
-      <h1>Trilhas de Cursos</h1>
-      <p class="subtitle">Playlists do canal <a href="https://www.youtube.com/@intelig%C3%AAnciamilgrau" target="_blank" rel="noopener">Inteligência Mil Grau</a> no YouTube</p>
-      <p class="updated-at" id="updated-at"></p>
+    <div class="container header-shell">
+      <nav class="topbar" aria-label="Navegação principal">
+        <a class="brand" href="./" aria-label="Inteligência Mil Grau — início">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span>
+          </span>
+          <span class="brand-copy">
+            <strong>Inteligência</strong>
+            <small>Mil Grau</small>
+          </span>
+        </a>
+
+        <a class="channel-link" href="https://www.youtube.com/@intelig%C3%AAnciamilgrau" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21.6 7.2a2.9 2.9 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2A30 30 0 0 0 2 12a30 30 0 0 0 .4 4.8 2.9 2.9 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2A30 30 0 0 0 22 12a30 30 0 0 0-.4-4.8ZM10 15.2V8.8l5.5 3.2-5.5 3.2Z"/>
+          </svg>
+          <span>Ver canal</span>
+        </a>
+      </nav>
+
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Formação em IA
+          </p>
+          <h1>Conhecimento que vira <span>projeto de verdade.</span></h1>
+          <p class="hero-lead">Trilhas diretas ao ponto para você dominar inteligência artificial, criar agentes e transformar ideias em soluções reais.</p>
+          <a class="hero-action" href="#trails-title">
+            Explorar todos os cursos
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="brazil-diamond" aria-hidden="true"></div>
+
+          <a id="hero-course-link" class="hero-course-card" href="#trilha-detail" aria-label="Abrir trilha em destaque">
+            <span class="hero-course-thumb" id="hero-course-thumb">
+              <span class="hero-course-skeleton" aria-hidden="true"></span>
+              <span class="hero-course-tag">Comece por aqui</span>
+              <span class="hero-course-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="m8.5 5.7 9.8 6.3-9.8 6.3V5.7Z"/></svg>
+              </span>
+            </span>
+            <span class="hero-course-body">
+              <span class="hero-course-kicker">Trilha em destaque</span>
+              <strong id="hero-course-title">Carregando curso...</strong>
+              <span class="hero-course-footer">
+                <span id="hero-course-count">Conteúdo em sequência</span>
+                <span class="hero-course-cta">
+                  Ver trilha
+                  <i aria-hidden="true">→</i>
+                </span>
+              </span>
+            </span>
+          </a>
+
+          <span class="floating-label label-one" aria-hidden="true">CURSO</span>
+          <span class="floating-label label-two" aria-hidden="true">COMECE AGORA</span>
+        </div>
+
+        <div class="hero-metrics" aria-label="Resumo das trilhas">
+          <div class="metric">
+            <strong id="trail-count">—</strong>
+            <span>trilhas completas</span>
+          </div>
+          <div class="metric">
+            <strong id="video-count">—</strong>
+            <span>aulas</span>
+          </div>
+          <div class="metric metric-update">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span id="updated-at">Conteúdo atualizado</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <nav id="trilha-tabs" class="trilha-tabs" aria-label="Escolha uma trilha">
-      <p id="loading-message">Carregando trilhas...</p>
-    </nav>
-    <section id="trilha-detail" class="trilha-detail" aria-live="polite"></section>
+  <main id="conteudo">
+    <section class="trails-section container" aria-labelledby="trails-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Seu próximo nível começa aqui</p>
+          <h2 id="trails-title">Escolha uma trilha</h2>
+        </div>
+        <p>Conteúdo organizado em uma sequência clara para você aprender no seu ritmo e avançar com confiança.</p>
+      </div>
+
+      <nav id="trilha-tabs" class="trilha-tabs" aria-label="Escolha uma trilha">
+        <p id="loading-message"><span></span>Carregando trilhas...</p>
+      </nav>
+
+      <section id="trilha-detail" class="trilha-detail" aria-live="polite"></section>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>Dados atualizados automaticamente todos os dias a partir do YouTube.</p>
+    <div class="container footer-inner">
+      <a class="brand brand-footer" href="./" aria-label="Inteligência Mil Grau — início">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span class="brand-copy"><strong>Inteligência</strong><small>Mil Grau</small></span>
+      </a>
+      <p>Conteúdo para levar a inteligência artificial mais longe.</p>
+      <span class="footer-origin">
+        <i aria-hidden="true"></i>
+        Criado no Brasil
+      </span>
     </div>
   </footer>
 
