@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T06:17:19.005Z",
+  "updatedAt": "2026-07-23T06:58:11.125Z",
   "playlists": [
     {
       "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
@@ -156,56 +156,56 @@
       "id": "PLYAGaVIlnsYbB0ykgVoIlF7KzSc7efEPT",
       "title": "Consciência de Máquina",
       "description": "Inteligência Artificial Pode Ter Emoções, Consciência e uma Vida de Máquina? Uma Vida Artificial?\n\nNesta Playlist Abordo o Tema de Forma Factível, Buscando Um Caminho Científico Tentando Resolver o Quebra Cabeças da Inteligência Artificial e Como Fazer Uma",
-      "thumbnail": "https://i.ytimg.com/vi/Xeykqc1PXDE/maxresdefault.jpg",
+      "thumbnail": "https://i.ytimg.com/vi/hKpi3e1iJrk/maxresdefault.jpg",
       "url": "https://www.youtube.com/playlist?list=PLYAGaVIlnsYbB0ykgVoIlF7KzSc7efEPT",
       "videos": [
-        {
-          "videoId": "Xeykqc1PXDE",
-          "title": "Emoção de Máquina",
-          "thumbnail": "https://i.ytimg.com/vi/Xeykqc1PXDE/maxresdefault.jpg",
-          "publishedAt": "2025-12-13T10:22:12Z",
-          "position": 0
-        },
         {
           "videoId": "hKpi3e1iJrk",
           "title": "Consciência de Máquina",
           "thumbnail": "https://i.ytimg.com/vi/hKpi3e1iJrk/maxresdefault.jpg",
           "publishedAt": "2025-12-13T10:25:22Z",
-          "position": 1
-        },
-        {
-          "videoId": "5-bnnH3oNj4",
-          "title": "Miguel Nicolelis: A iA Não é Nem Inteligência e Nem Artificial - Questões da Inteligência Artificial",
-          "thumbnail": "https://i.ytimg.com/vi/5-bnnH3oNj4/maxresdefault.jpg",
-          "publishedAt": "2025-12-25T17:33:20Z",
-          "position": 2
+          "position": 0
         },
         {
           "videoId": "Bo95ABfoqqM",
           "title": "Lógica de Máquina - Como uma Inteligência Artificial Pensa Usando Lógica",
           "thumbnail": "https://i.ytimg.com/vi/Bo95ABfoqqM/maxresdefault.jpg",
           "publishedAt": "2025-12-25T17:51:23Z",
-          "position": 3
-        },
-        {
-          "videoId": "iyHYUnYuGLM",
-          "title": "Como Uma iA Sabe O que é Verdade? Testes Avançados com Reconhecimento de Imagens",
-          "thumbnail": "https://i.ytimg.com/vi/iyHYUnYuGLM/maxresdefault.jpg",
-          "publishedAt": "2025-12-31T21:10:01Z",
-          "position": 4
+          "position": 1
         },
         {
           "videoId": "8mzk7SuzVHY",
           "title": "A História Secreta da AGI",
           "thumbnail": "https://i.ytimg.com/vi/8mzk7SuzVHY/maxresdefault.jpg",
           "publishedAt": "2026-01-31T23:00:53Z",
-          "position": 5
+          "position": 2
         },
         {
           "videoId": "9bFnE4z3Jcw",
           "title": "iA Será Consciente? Como Ver a iA pela Ótica das Neurociências, Evolução e Biologia",
           "thumbnail": "https://i.ytimg.com/vi/9bFnE4z3Jcw/maxresdefault.jpg",
           "publishedAt": "2026-05-31T13:47:15Z",
+          "position": 3
+        },
+        {
+          "videoId": "5-bnnH3oNj4",
+          "title": "Miguel Nicolelis: A iA Não é Nem Inteligência e Nem Artificial - Questões da Inteligência Artificial",
+          "thumbnail": "https://i.ytimg.com/vi/5-bnnH3oNj4/maxresdefault.jpg",
+          "publishedAt": "2025-12-25T17:33:20Z",
+          "position": 4
+        },
+        {
+          "videoId": "Xeykqc1PXDE",
+          "title": "Emoção de Máquina",
+          "thumbnail": "https://i.ytimg.com/vi/Xeykqc1PXDE/maxresdefault.jpg",
+          "publishedAt": "2025-12-13T10:22:12Z",
+          "position": 5
+        },
+        {
+          "videoId": "iyHYUnYuGLM",
+          "title": "Como Uma iA Sabe O que é Verdade? Testes Avançados com Reconhecimento de Imagens",
+          "thumbnail": "https://i.ytimg.com/vi/iyHYUnYuGLM/maxresdefault.jpg",
+          "publishedAt": "2025-12-31T21:10:01Z",
           "position": 6
         }
       ]
