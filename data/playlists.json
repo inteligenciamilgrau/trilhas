@@ -1,0 +1,29 @@
+{
+  "updatedAt": null,
+  "playlists": [
+    {
+      "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
+      "title": "",
+      "description": "",
+      "thumbnail": "",
+      "url": "https://www.youtube.com/playlist?list=PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
+      "videos": []
+    },
+    {
+      "id": "PLRPs03Yn8ecM",
+      "title": "",
+      "description": "",
+      "thumbnail": "",
+      "url": "https://www.youtube.com/playlist?list=PLRPs03Yn8ecM",
+      "videos": []
+    },
+    {
+      "id": "PLYAGaVIlnsYbB0ykgVoIlF7KzSc7efEPT",
+      "title": "",
+      "description": "",
+      "thumbnail": "",
+      "url": "https://www.youtube.com/playlist?list=PLYAGaVIlnsYbB0ykgVoIlF7KzSc7efEPT",
+      "videos": []
+    }
+  ]
+}
