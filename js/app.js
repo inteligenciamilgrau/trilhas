@@ -1,7 +1,11 @@
 const PLAYLISTS_URL = "data/playlists.json";
 
+let playlistsData = [];
+let activeIndex = 0;
+
 async function loadPlaylists() {
-  const container = document.getElementById("playlists");
+  const tabsEl = document.getElementById("trilha-tabs");
+  const detailEl = document.getElementById("trilha-detail");
   const updatedAtEl = document.getElementById("updated-at");
 
   try {
@@ -15,76 +19,99 @@ async function loadPlaylists() {
     }
 
     if (!data.playlists || data.playlists.length === 0) {
-      container.innerHTML = '<p id="error-message">Nenhuma trilha disponível no momento.</p>';
+      tabsEl.innerHTML = "";
+      detailEl.innerHTML = '<p id="error-message">Nenhuma trilha disponível no momento.</p>';
       return;
     }
 
-    container.innerHTML = "";
-    data.playlists.forEach((playlist) => {
-      container.appendChild(renderPlaylistCard(playlist));
-    });
+    playlistsData = data.playlists;
+    renderTabs();
+    selectTrilha(0);
   } catch (err) {
     console.error("Falha ao carregar as trilhas:", err);
-    container.innerHTML = '<p id="error-message">Não foi possível carregar as trilhas agora. Tente novamente mais tarde.</p>';
+    tabsEl.innerHTML = "";
+    detailEl.innerHTML = '<p id="error-message">Não foi possível carregar as trilhas agora. Tente novamente mais tarde.</p>';
   }
 }
 
-function renderPlaylistCard(playlist) {
-  const card = document.createElement("article");
-  card.className = "playlist-card";
+function renderTabs() {
+  const tabsEl = document.getElementById("trilha-tabs");
+  tabsEl.innerHTML = "";
 
+  playlistsData.forEach((playlist, index) => {
+    const videoCount = playlist.videos ? playlist.videos.length : 0;
+    const title = playlist.title || "Trilha ainda não sincronizada";
+
+    const tab = document.createElement("button");
+    tab.type = "button";
+    tab.className = "trilha-tab";
+    tab.setAttribute("data-index", String(index));
+    tab.innerHTML = `
+      <span class="trilha-tab-thumb">${thumbHtml(playlist.thumbnail, "")}</span>
+      <span class="trilha-tab-info">
+        <span class="trilha-tab-eyebrow">Trilha ${index + 1}</span>
+        <span class="trilha-tab-title">${escapeHtml(title)}</span>
+        <span class="trilha-tab-count">${videoCount} vídeo${videoCount === 1 ? "" : "s"}</span>
+      </span>
+    `;
+    tab.addEventListener("click", () => selectTrilha(index));
+    tabsEl.appendChild(tab);
+  });
+}
+
+function selectTrilha(index) {
+  activeIndex = index;
+  const playlist = playlistsData[index];
+
+  document.querySelectorAll(".trilha-tab").forEach((tab) => {
+    tab.classList.toggle("active", Number(tab.dataset.index) === index);
+  });
+
+  renderDetail(playlist);
+}
+
+function renderDetail(playlist) {
+  const detailEl = document.getElementById("trilha-detail");
   const videoCount = playlist.videos ? playlist.videos.length : 0;
   const title = playlist.title || "Trilha ainda não sincronizada";
 
-  card.innerHTML = `
-    <a class="playlist-thumb-link" href="${playlist.url}" target="_blank" rel="noopener">
-      ${thumbHtml(playlist.thumbnail, `Capa da trilha ${escapeHtml(title)}`)}
-      <span class="play-badge">▶</span>
-    </a>
-    <div class="playlist-body">
-      <h2 class="playlist-title"><a href="${playlist.url}" target="_blank" rel="noopener">${escapeHtml(title)}</a></h2>
-      <p class="playlist-meta">${videoCount} vídeo${videoCount === 1 ? "" : "s"}</p>
-      <div class="playlist-actions">
-        <a class="btn btn-primary" href="${playlist.url}" target="_blank" rel="noopener">Assistir no YouTube</a>
-        <button type="button" class="btn btn-toggle" aria-expanded="false">Ver vídeos da trilha</button>
+  detailEl.innerHTML = `
+    <div class="trilha-banner">
+      <div class="trilha-banner-thumb">
+        ${thumbHtml(playlist.thumbnail, `Capa da trilha ${escapeHtml(title)}`)}
       </div>
-      <ul class="video-list"></ul>
+      <div class="trilha-banner-info">
+        <h2 class="trilha-banner-title">${escapeHtml(title)}</h2>
+        <p class="trilha-banner-meta">${videoCount} vídeo${videoCount === 1 ? "" : "s"} nesta trilha</p>
+        <a class="btn btn-primary" href="${playlist.url}" target="_blank" rel="noopener">
+          <span class="playlist-icon" aria-hidden="true">▤</span>
+          Abrir playlist completa no YouTube
+        </a>
+      </div>
     </div>
+    <div class="video-grid"></div>
   `;
 
-  const toggleBtn = card.querySelector(".btn-toggle");
-  const videoList = card.querySelector(".video-list");
-  let rendered = false;
-
-  toggleBtn.addEventListener("click", () => {
-    const isOpen = videoList.classList.toggle("open");
-    toggleBtn.setAttribute("aria-expanded", String(isOpen));
-    toggleBtn.textContent = isOpen ? "Esconder vídeos" : "Ver vídeos da trilha";
-
-    if (isOpen && !rendered) {
-      renderVideoList(videoList, playlist.videos || []);
-      rendered = true;
-    }
-  });
-
-  return card;
+  const grid = detailEl.querySelector(".video-grid");
+  renderVideoGrid(grid, playlist.videos || []);
 }
 
-function renderVideoList(listEl, videos) {
+function renderVideoGrid(gridEl, videos) {
   if (videos.length === 0) {
-    listEl.innerHTML = "<li>Nenhum vídeo encontrado.</li>";
+    gridEl.innerHTML = '<p class="video-grid-empty">Nenhum vídeo sincronizado ainda para esta trilha.</p>';
     return;
   }
 
-  listEl.innerHTML = videos
+  gridEl.innerHTML = videos
     .map(
-      (video) => `
-      <li>
-        <a class="video-item" href="https://www.youtube.com/watch?v=${video.videoId}" target="_blank" rel="noopener">
-          <div class="video-thumb-wrap">${thumbHtml(video.thumbnail, "")}</div>
-          <span class="video-item-title">${escapeHtml(video.title)}</span>
-        </a>
-      </li>
+      (video, i) => `
+      <a class="video-card" href="https://www.youtube.com/watch?v=${video.videoId}" target="_blank" rel="noopener">
+        <span class="video-card-thumb">
+          ${thumbHtml(video.thumbnail, "")}
+          <span class="video-card-number">${i + 1}</span>
+        </span>
+        <span class="video-card-title">${escapeHtml(video.title)}</span>
+      </a>
     `
     )
     .join("");
