@@ -115,14 +115,19 @@ function renderTabs() {
   playlistsData.forEach((playlist, index) => {
     const videoCount = playlist.videos?.length || 0;
     const title = playlist.title || "Trilha em preparação";
-    const tab = document.createElement("button");
+    const tab = document.createElement("article");
 
-    tab.type = "button";
     tab.className = "trilha-tab";
     tab.dataset.index = String(index);
-    tab.setAttribute("aria-pressed", "false");
-    tab.setAttribute("aria-label", `Abrir trilha ${index + 1}: ${title}`);
     tab.innerHTML = `
+      <button
+        class="trilha-tab-select"
+        type="button"
+        aria-pressed="false"
+        aria-label="Mostrar aulas da trilha ${escapeAttribute(title)}"
+      >
+        <span class="sr-only">Mostrar aulas de ${escapeHtml(title)}</span>
+      </button>
       <span class="trilha-tab-thumb">
         ${thumbHtml(playlist.thumbnail, "")}
         <span class="trilha-tab-index">TRILHA ${String(index + 1).padStart(2, "0")}</span>
@@ -132,9 +137,27 @@ function renderTabs() {
           ${videoCount} aula${videoCount === 1 ? "" : "s"}
         </span>
         <span class="trilha-tab-title">${escapeHtml(title)}</span>
+        <span class="trilha-tab-actions">
+          <span class="trilha-tab-hint">
+            Ver aulas
+            <i aria-hidden="true">↓</i>
+          </span>
+          <a
+            class="trilha-playlist-btn"
+            href="${escapeAttribute(playlist.url || "#")}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Assistir playlist ${escapeAttribute(title)} no YouTube"
+          >
+            ${icons.youtube}
+            Assistir playlist
+          </a>
+        </span>
       </span>
     `;
-    tab.addEventListener("click", () => selectTrilha(index));
+    tab.querySelector(".trilha-tab-select").addEventListener("click", () => {
+      selectTrilha(index);
+    });
     tabsEl.appendChild(tab);
   });
 }
@@ -146,7 +169,7 @@ function selectTrilha(index) {
   document.querySelectorAll(".trilha-tab").forEach((tab) => {
     const isActive = Number(tab.dataset.index) === index;
     tab.classList.toggle("active", isActive);
-    tab.setAttribute("aria-pressed", String(isActive));
+    tab.querySelector(".trilha-tab-select").setAttribute("aria-pressed", String(isActive));
   });
 
   renderDetail(playlist, index);
@@ -156,43 +179,17 @@ function renderDetail(playlist, index) {
   const detailEl = document.getElementById("trilha-detail");
   const videoCount = playlist.videos?.length || 0;
   const title = playlist.title || "Trilha em preparação";
-  const description =
-    playlist.description?.trim() ||
-    "Uma sequência prática de conteúdos para você aprender com clareza e aplicar o conhecimento em projetos reais.";
 
   detailEl.innerHTML = `
-    <article class="trilha-banner">
-      <div class="trilha-banner-thumb">
-        ${thumbHtml(playlist.thumbnail, `Capa da trilha ${title}`)}
-        <span class="trilha-banner-badge">Trilha ${String(index + 1).padStart(2, "0")}</span>
-      </div>
-      <div class="trilha-banner-info">
-        <p class="trilha-banner-eyebrow">Trilha em destaque</p>
-        <h2 class="trilha-banner-title">${escapeHtml(title)}</h2>
-        <p class="trilha-banner-description">${escapeHtml(description)}</p>
-        <div class="trilha-banner-meta">
-          <span class="meta-chip">
-            ${icons.lessons}
-            ${videoCount} aula${videoCount === 1 ? "" : "s"}
-          </span>
-          <span class="meta-chip">
-            ${icons.spark}
-            Aprendizado prático
-          </span>
-        </div>
-        <a class="btn btn-primary" href="${escapeAttribute(playlist.url || "#")}" target="_blank" rel="noopener noreferrer">
-          ${icons.youtube}
-          Assistir playlist no YouTube
-        </a>
-      </div>
-    </article>
-
     <div class="video-section-heading">
       <div>
-        <p class="section-kicker">Conteúdo da formação</p>
-        <h3>Aulas desta trilha</h3>
+        <p class="section-step section-step-content">
+          <span>02</span>
+          Vídeos da trilha
+        </p>
+        <h2>${escapeHtml(title)}</h2>
       </div>
-      <span class="video-section-count">${videoCount} conteúdo${videoCount === 1 ? "" : "s"} em sequência</span>
+      <span class="video-section-count">Trilha ${String(index + 1).padStart(2, "0")} · ${videoCount} aula${videoCount === 1 ? "" : "s"}</span>
     </div>
     <div class="video-grid"></div>
   `;
