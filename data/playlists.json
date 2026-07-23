@@ -1,29 +1,214 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-07-23T06:17:19.005Z",
   "playlists": [
     {
       "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
-      "title": "",
-      "description": "",
-      "thumbnail": "",
+      "title": "Curso de Agentes iA",
+      "description": "Aprenda A Criar Agentes iA",
+      "thumbnail": "https://i.ytimg.com/vi/mlj8Jp_hWk4/maxresdefault.jpg",
       "url": "https://www.youtube.com/playlist?list=PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
-      "videos": []
+      "videos": [
+        {
+          "videoId": "mlj8Jp_hWk4",
+          "title": "Módulo Agentes Aula 001 - Como Fazer um Agente Simples e Rápido Nível Básico",
+          "thumbnail": "https://i.ytimg.com/vi/mlj8Jp_hWk4/maxresdefault.jpg",
+          "publishedAt": "2025-03-08T09:22:24Z",
+          "position": 0
+        },
+        {
+          "videoId": "DNtAUYcFSTQ",
+          "title": "Módulo Agentes Aula 002 - Primeiros Agentes Encadeados",
+          "thumbnail": "https://i.ytimg.com/vi/DNtAUYcFSTQ/maxresdefault.jpg",
+          "publishedAt": "2025-03-09T09:36:52Z",
+          "position": 1
+        },
+        {
+          "videoId": "XO_2j2cMa6g",
+          "title": "Módulo Agentes Aula 003 - Criando um Agente Classificador",
+          "thumbnail": "https://i.ytimg.com/vi/XO_2j2cMa6g/maxresdefault.jpg",
+          "publishedAt": "2025-03-13T01:04:20Z",
+          "position": 2
+        },
+        {
+          "videoId": "qWQe0JJjSHE",
+          "title": "Módulo Agentes Aula 004 - Agentes Trabalhando com Arquivos",
+          "thumbnail": "https://i.ytimg.com/vi/qWQe0JJjSHE/maxresdefault.jpg",
+          "publishedAt": "2025-03-23T10:48:26Z",
+          "position": 3
+        },
+        {
+          "videoId": "NQwCgcrnSzU",
+          "title": "Módulo Agentes Aula 005 - Agentes Integrados com WhatsApp",
+          "thumbnail": "https://i.ytimg.com/vi/NQwCgcrnSzU/maxresdefault.jpg",
+          "publishedAt": "2025-03-21T18:10:04Z",
+          "position": 4
+        },
+        {
+          "videoId": "ML8f2ttjLls",
+          "title": "Módulo Agentes Aula 006 - Plataformas de iA Para Agentes e Automação",
+          "thumbnail": "https://i.ytimg.com/vi/ML8f2ttjLls/maxresdefault.jpg",
+          "publishedAt": "2025-04-24T23:26:02Z",
+          "position": 5
+        },
+        {
+          "videoId": "AbRurt6CA7M",
+          "title": "Módulo Agentes Aula 007 - Agentes iA com N8N do Zero",
+          "thumbnail": "https://i.ytimg.com/vi/AbRurt6CA7M/maxresdefault.jpg",
+          "publishedAt": "2025-04-24T23:23:12Z",
+          "position": 6
+        },
+        {
+          "videoId": "2XoL2K-5N78",
+          "title": "Módulo Agentes Aula 008 - Mini Fluxo do Zero",
+          "thumbnail": "https://i.ytimg.com/vi/2XoL2K-5N78/maxresdefault.jpg",
+          "publishedAt": "2025-04-27T17:44:13Z",
+          "position": 7
+        },
+        {
+          "videoId": "Hc-nyaavF_o",
+          "title": "Módulo Agentes Aula 009 - Integrando WhatsApp no n8n",
+          "thumbnail": "https://i.ytimg.com/vi/Hc-nyaavF_o/maxresdefault.jpg",
+          "publishedAt": "2025-04-30T20:22:52Z",
+          "position": 8
+        },
+        {
+          "videoId": "u1VwYjBr26M",
+          "title": "Módulo Agentes Aula 010 - Integrando Agente com Google Planilhas (Sheets)",
+          "thumbnail": "https://i.ytimg.com/vi/u1VwYjBr26M/maxresdefault.jpg",
+          "publishedAt": "2025-05-20T13:05:22Z",
+          "position": 9
+        },
+        {
+          "videoId": "hhfl8d_xqrE",
+          "title": "Módulo Agentes Aula 011 -  Integrando Agente com MCP",
+          "thumbnail": "https://i.ytimg.com/vi/hhfl8d_xqrE/maxresdefault.jpg",
+          "publishedAt": "2025-05-22T11:27:46Z",
+          "position": 10
+        },
+        {
+          "videoId": "4UXPXu2EK9w",
+          "title": "Módulo Agentes Aula 012 - Colocando Memória no Agente iA",
+          "thumbnail": "https://i.ytimg.com/vi/4UXPXu2EK9w/maxresdefault.jpg",
+          "publishedAt": "2025-05-30T19:01:56Z",
+          "position": 11
+        },
+        {
+          "videoId": "YvD4Ond_KDg",
+          "title": "Módulo Agentes Aula 013 - Agentes Que Tomam Decisões Importantes",
+          "thumbnail": "https://i.ytimg.com/vi/YvD4Ond_KDg/maxresdefault.jpg",
+          "publishedAt": "2025-06-07T23:05:33Z",
+          "position": 12
+        },
+        {
+          "videoId": "2xIko-UAnTQ",
+          "title": "Módulo Agentes Aula 014 - Consultando PDFs e Documentos usando RAG",
+          "thumbnail": "https://i.ytimg.com/vi/2xIko-UAnTQ/maxresdefault.jpg",
+          "publishedAt": "2025-06-09T23:09:46Z",
+          "position": 13
+        },
+        {
+          "videoId": "G0JhtgkI5aI",
+          "title": "Módulo Agentes Aula 015 - Analisando os Dados do RAG e Splitter",
+          "thumbnail": "https://i.ytimg.com/vi/G0JhtgkI5aI/maxresdefault.jpg",
+          "publishedAt": "2025-06-17T15:44:54Z",
+          "position": 14
+        },
+        {
+          "videoId": "O1qSjvUft9s",
+          "title": "Módulo Agentes Aula 016 - Conclusão do Módulo Básico",
+          "thumbnail": "https://i.ytimg.com/vi/O1qSjvUft9s/maxresdefault.jpg",
+          "publishedAt": "2025-06-22T05:27:47Z",
+          "position": 15
+        },
+        {
+          "videoId": "PpS9LfCU-BY",
+          "title": "Como Usar os Agentes da OpenAI via API em Python | Muito Simples e Fácil",
+          "thumbnail": "https://i.ytimg.com/vi/PpS9LfCU-BY/maxresdefault.jpg",
+          "publishedAt": "2025-03-13T07:57:34Z",
+          "position": 16
+        }
+      ]
     },
     {
       "id": "PLRPs03Yn8ecM",
-      "title": "",
-      "description": "",
-      "thumbnail": "",
+      "title": "Trilha de iA Avançada",
+      "description": "Aumente seus conhecimentos sobre iA e Torne seus projetos mais poderorsos",
+      "thumbnail": "https://i.ytimg.com/vi/T0O4EhE3pSU/maxresdefault.jpg",
       "url": "https://www.youtube.com/playlist?list=PLRPs03Yn8ecM",
-      "videos": []
+      "videos": [
+        {
+          "videoId": "T0O4EhE3pSU",
+          "title": "Formação em iA Avançada para Profissionais, Pesquisadores e Curiosos sobre Inteligência Artificial",
+          "thumbnail": "https://i.ytimg.com/vi/T0O4EhE3pSU/maxresdefault.jpg",
+          "publishedAt": "2026-07-19T04:50:26Z",
+          "position": 0
+        },
+        {
+          "videoId": "pW4SeZDj-uk",
+          "title": "A Origem dos Prompts - Formação em iA Avançada - Parte 001",
+          "thumbnail": "https://i.ytimg.com/vi/pW4SeZDj-uk/maxresdefault.jpg",
+          "publishedAt": "2026-07-23T00:40:33Z",
+          "position": 1
+        }
+      ]
     },
     {
       "id": "PLYAGaVIlnsYbB0ykgVoIlF7KzSc7efEPT",
-      "title": "",
-      "description": "",
-      "thumbnail": "",
+      "title": "Consciência de Máquina",
+      "description": "Inteligência Artificial Pode Ter Emoções, Consciência e uma Vida de Máquina? Uma Vida Artificial?\n\nNesta Playlist Abordo o Tema de Forma Factível, Buscando Um Caminho Científico Tentando Resolver o Quebra Cabeças da Inteligência Artificial e Como Fazer Uma",
+      "thumbnail": "https://i.ytimg.com/vi/Xeykqc1PXDE/maxresdefault.jpg",
       "url": "https://www.youtube.com/playlist?list=PLYAGaVIlnsYbB0ykgVoIlF7KzSc7efEPT",
-      "videos": []
+      "videos": [
+        {
+          "videoId": "Xeykqc1PXDE",
+          "title": "Emoção de Máquina",
+          "thumbnail": "https://i.ytimg.com/vi/Xeykqc1PXDE/maxresdefault.jpg",
+          "publishedAt": "2025-12-13T10:22:12Z",
+          "position": 0
+        },
+        {
+          "videoId": "hKpi3e1iJrk",
+          "title": "Consciência de Máquina",
+          "thumbnail": "https://i.ytimg.com/vi/hKpi3e1iJrk/maxresdefault.jpg",
+          "publishedAt": "2025-12-13T10:25:22Z",
+          "position": 1
+        },
+        {
+          "videoId": "5-bnnH3oNj4",
+          "title": "Miguel Nicolelis: A iA Não é Nem Inteligência e Nem Artificial - Questões da Inteligência Artificial",
+          "thumbnail": "https://i.ytimg.com/vi/5-bnnH3oNj4/maxresdefault.jpg",
+          "publishedAt": "2025-12-25T17:33:20Z",
+          "position": 2
+        },
+        {
+          "videoId": "Bo95ABfoqqM",
+          "title": "Lógica de Máquina - Como uma Inteligência Artificial Pensa Usando Lógica",
+          "thumbnail": "https://i.ytimg.com/vi/Bo95ABfoqqM/maxresdefault.jpg",
+          "publishedAt": "2025-12-25T17:51:23Z",
+          "position": 3
+        },
+        {
+          "videoId": "iyHYUnYuGLM",
+          "title": "Como Uma iA Sabe O que é Verdade? Testes Avançados com Reconhecimento de Imagens",
+          "thumbnail": "https://i.ytimg.com/vi/iyHYUnYuGLM/maxresdefault.jpg",
+          "publishedAt": "2025-12-31T21:10:01Z",
+          "position": 4
+        },
+        {
+          "videoId": "8mzk7SuzVHY",
+          "title": "A História Secreta da AGI",
+          "thumbnail": "https://i.ytimg.com/vi/8mzk7SuzVHY/maxresdefault.jpg",
+          "publishedAt": "2026-01-31T23:00:53Z",
+          "position": 5
+        },
+        {
+          "videoId": "9bFnE4z3Jcw",
+          "title": "iA Será Consciente? Como Ver a iA pela Ótica das Neurociências, Evolução e Biologia",
+          "thumbnail": "https://i.ytimg.com/vi/9bFnE4z3Jcw/maxresdefault.jpg",
+          "publishedAt": "2026-05-31T13:47:15Z",
+          "position": 6
+        }
+      ]
     }
   ]
 }
