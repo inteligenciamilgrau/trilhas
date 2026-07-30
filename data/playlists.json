@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T13:23:32.729Z",
+  "updatedAt": "2026-07-30T04:36:48.773Z",
   "playlists": [
     {
       "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
@@ -207,6 +207,29 @@
           "thumbnail": "https://i.ytimg.com/vi/iyHYUnYuGLM/maxresdefault.jpg",
           "publishedAt": "2025-12-31T21:10:01Z",
           "position": 6
+        }
+      ]
+    },
+    {
+      "id": "PLYAGaVIlnsYZmGpDhdejv9IvjuUpY37Dl",
+      "title": "Instalações e Acessórios",
+      "description": "Instalações e Programas Acessórios para uso com iA",
+      "thumbnail": "https://i.ytimg.com/vi/17nb7d3i1P8/maxresdefault.jpg",
+      "url": "https://www.youtube.com/playlist?list=PLYAGaVIlnsYZmGpDhdejv9IvjuUpY37Dl",
+      "videos": [
+        {
+          "videoId": "17nb7d3i1P8",
+          "title": "Como Instalar Python no Windows",
+          "thumbnail": "https://i.ytimg.com/vi/17nb7d3i1P8/maxresdefault.jpg",
+          "publishedAt": "2025-03-18T13:47:12Z",
+          "position": 0
+        },
+        {
+          "videoId": "zDonXgsiurw",
+          "title": "GitHub: Organizando Código com iA",
+          "thumbnail": "https://i.ytimg.com/vi/zDonXgsiurw/maxresdefault.jpg",
+          "publishedAt": "2026-07-30T04:01:59Z",
+          "position": 1
         }
       ]
     }
