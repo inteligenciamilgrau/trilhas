@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T12:39:08.994Z",
+  "updatedAt": "2026-08-08T12:25:27.988Z",
   "playlists": [
     {
       "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
@@ -225,17 +225,17 @@
       "url": "https://www.youtube.com/playlist?list=PLYAGaVIlnsYZmGpDhdejv9IvjuUpY37Dl",
       "videos": [
         {
-          "videoId": "17nb7d3i1P8",
-          "title": "Como Instalar Python no Windows",
-          "thumbnail": "https://i.ytimg.com/vi/17nb7d3i1P8/maxresdefault.jpg",
-          "publishedAt": "2025-03-18T13:48:30Z",
-          "position": 0
-        },
-        {
           "videoId": "zDonXgsiurw",
           "title": "GitHub: Organizando Código com iA",
           "thumbnail": "https://i.ytimg.com/vi/zDonXgsiurw/maxresdefault.jpg",
           "publishedAt": "2026-07-30T04:02:39Z",
+          "position": 0
+        },
+        {
+          "videoId": "17nb7d3i1P8",
+          "title": "Como Instalar Python no Windows",
+          "thumbnail": "https://i.ytimg.com/vi/17nb7d3i1P8/maxresdefault.jpg",
+          "publishedAt": "2025-03-18T13:48:30Z",
           "position": 1
         }
       ]
