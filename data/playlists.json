@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T13:07:23.327Z",
+  "updatedAt": "2026-08-10T13:09:13.858Z",
   "playlists": [
     {
       "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
@@ -156,6 +156,13 @@
           "thumbnail": "https://i.ytimg.com/vi/bNXgV3Lw98A/maxresdefault.jpg",
           "publishedAt": "2026-07-30T06:09:52Z",
           "position": 2
+        },
+        {
+          "videoId": "LqWqm0Kl4Ko",
+          "title": "Claude Code - Como Usar WorkFlows e Como Funciona - Parte 003",
+          "thumbnail": "https://i.ytimg.com/vi/LqWqm0Kl4Ko/maxresdefault.jpg",
+          "publishedAt": "2026-08-10T13:08:43Z",
+          "position": 3
         }
       ]
     },
