@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T13:09:13.858Z",
+  "updatedAt": "2026-08-11T04:43:31.124Z",
   "playlists": [
     {
       "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
@@ -256,11 +256,19 @@
     },
     {
       "id": "PLUledcxTIKsQ",
-      "title": "",
-      "description": "",
-      "thumbnail": "",
+      "title": "ARC AGI",
+      "description": "O ARC AGi é um BenchMark que tem premiação pela Kaggle para Resolver um desafio de iA de alta dificuldade que força a solução a fugir de padrões e estar sempre preparada para se adaptar a mudanças",
+      "thumbnail": "https://i.ytimg.com/vi/krthZj_ml5Q/maxresdefault.jpg",
       "url": "https://www.youtube.com/playlist?list=PLUledcxTIKsQ",
-      "videos": []
+      "videos": [
+        {
+          "videoId": "krthZj_ml5Q",
+          "title": "Nem Claude, nem ChatGPT, nem GEMINI: Ninguém Passou de 1% no Teste de 1.000.000 de Reais | ARC AGI 3",
+          "thumbnail": "https://i.ytimg.com/vi/krthZj_ml5Q/maxresdefault.jpg",
+          "publishedAt": "2026-08-11T04:34:28Z",
+          "position": 0
+        }
+      ]
     }
   ]
 }
