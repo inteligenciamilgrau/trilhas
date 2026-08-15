@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T12:40:06.797Z",
+  "updatedAt": "2026-08-15T12:16:51.111Z",
   "playlists": [
     {
       "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
@@ -163,6 +163,13 @@
           "thumbnail": "https://i.ytimg.com/vi/LqWqm0Kl4Ko/maxresdefault.jpg",
           "publishedAt": "2026-08-10T13:08:43Z",
           "position": 3
+        },
+        {
+          "videoId": "jMOYjCCEc2s",
+          "title": "Fazendo Loops e Tarefas Orientadas a Objetivo  - Formação em iA Avançada - Parte 004",
+          "thumbnail": "https://i.ytimg.com/vi/jMOYjCCEc2s/maxresdefault.jpg",
+          "publishedAt": "2026-08-14T13:58:54Z",
+          "position": 4
         }
       ]
     },
