@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T12:17:53.527Z",
+  "updatedAt": "2026-08-17T12:21:30.845Z",
   "playlists": [
     {
       "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
@@ -170,6 +170,13 @@
           "thumbnail": "https://i.ytimg.com/vi/jMOYjCCEc2s/maxresdefault.jpg",
           "publishedAt": "2026-08-14T13:58:54Z",
           "position": 4
+        },
+        {
+          "videoId": "XaMN61G9cNo",
+          "title": "Qual a Melhor Opção de Code, Cli, Work e Headless nos Agentes -  Formação em iA Avançada - Parte 005",
+          "thumbnail": "https://i.ytimg.com/vi/XaMN61G9cNo/maxresdefault.jpg",
+          "publishedAt": "2026-08-16T12:58:04Z",
+          "position": 5
         }
       ]
     },
