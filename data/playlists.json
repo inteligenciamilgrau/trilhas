@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:26:04.348Z",
+  "updatedAt": "2026-08-25T12:26:38.903Z",
   "playlists": [
     {
       "id": "PLYAGaVIlnsYYwZrQdUFFSb2dCpNWByG55",
@@ -177,6 +177,13 @@
           "thumbnail": "https://i.ytimg.com/vi/XaMN61G9cNo/maxresdefault.jpg",
           "publishedAt": "2026-08-16T12:58:04Z",
           "position": 5
+        },
+        {
+          "videoId": "t1l6TniJlGE",
+          "title": "Como Usar o Prompt Mágico - Formação em iA Avançada - Parte 006",
+          "thumbnail": "https://i.ytimg.com/vi/t1l6TniJlGE/maxresdefault.jpg",
+          "publishedAt": "2026-08-24T16:45:56Z",
+          "position": 6
         }
       ]
     },
